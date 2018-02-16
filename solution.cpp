@@ -15,7 +15,7 @@ struct factno
          if(s[i]=='!') 
             factorial_signs++; 
 
-      while(factorial_signs && value<=15)
+      while(factorial_signs && value<=12)
       { 
          long long f=1; 
          for(int i=2;i<=value;i++)
