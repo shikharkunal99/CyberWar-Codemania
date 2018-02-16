@@ -1,0 +1,57 @@
+CYBER WAR
+
+Problem Statement
+ A Cyber War has started between the IT companies in the city of "Hashland".
+ Companies are forming a team to defeat their rivals. Each teams consists of some "Script Kiddies" and zero or more "Black Hat Hackers". Every member of the team has some importance in increasing the strength of their team. "Script Kiddies" are alligned in a row one after the other followed by "Black Hat Hackers". Each "Script Kiddie" has a number assigned to him from "0" to "9", both inclusive. Every "Black Hat Hacker" is assigned a special value of "!" denoting the factorial operation. The total stength of a team is its total numerical value after applying the factorial operation (if any).
+ Your Job is to find our who will will in a 1-vs-1 war between two given companies.
+
+ Note: Factorial operation is shown below
+ 5! = 5*4*3*2*1
+ 4! = 4*3*2*1
+
+Input
+ First line of Input contains a single integer T denoting the number of test cases.
+ Each test case contains two lines denoting the teams.
+
+Output
+ For each test case print one value denoting the winner. 
+ Print "-1" if the first team will win.
+ Print "0" in case of tie.
+ Print "1" if second team win. 
+ Print your answers for each test case in a new line.
+ 
+Input Constraints
+ 1<=T<=200
+ Each team can consists between 1 and 50 (both inclusive) persons in total.
+ The integer value of the "Script Kiddies" combined for a team satisfy the following constraints- 
+  1. The value is a non-negative integer less than 10^9.
+  2. There is no leading zeros.
+
+
+ Sample Input
+ 3
+ 12!
+ 13!
+ 12!!
+ 13!
+ 4!
+ 24 
+
+Sample Output
+ -1
+ 0
+ 1
+
+Explanation
+ 1. For the first case 12!<13!, so the answer is -1
+ 2. For the second case, 12!! is 479001600! which is greater than 13!, so the answer is 1.
+ 3. For the third case, 4! is 24. So the total strength of both teams are same. Hence, the answer is 0 for this case.
+
+Time Limit
+ 1.0 s
+
+Setter:
+ Shikhar Kunal
+
+Tester:
+ Shikhar Kunal
